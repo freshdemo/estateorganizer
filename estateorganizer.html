@@ -27,7 +27,6 @@
 <!--		<h3>Compliments of:  Franca Perciballi EPC, CHS</h3> -->
 		<p>
 
-
 <p>
 Organize your estate and document what you may leave behind.
 </p>
@@ -44,32 +43,28 @@ When completed click the save to PDF button at the bottom.  This will open your 
                                 
         <hr />
 
+    <div class="callout panel">
+      <h5>Personal Information</h5>
+        <p>Fill out the information below for an individual.  You can add more individuals by pushing the button at the bottom of this section.</p>
+    </div>
 
-                                <div class="callout panel">
-                                    <h5>Personal Information</h5>
-                                        <p>Fill out the information below for an individual.  You can add more individuals by pushing the button at the bottom of this section.</p>
-                                    </div>
-
-
-        <form id="personalinfoForm">
-
-                                <div class="row">Individuals Name<input type ="text" autocomplete="on"></div>
-
-				<div class="row">
-                                    <div class="large-6 medium-6 columns">
-                                      <label>Birth Certificate Number</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
-                                    <div class="large-6 medium-6 columns">
-                                      <label>Issue Date</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
-                                </div>
-             			<div class="row">
-                                    <div class="large-4 medium-4 columns">
-                                      <label>Citizenship Card Number</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
+<form id="personalinfoForm">
+  <div class="row">Individuals Name<input type ="text" autocomplete="on"></div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Birth Certificate Number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Issue Date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 columns">
+          <label>Citizenship Card Number</label>
+          <input type="text" placeholder=" " />
+        </div>
                                     <div class="large-4 medium-4 columns">
                                       <label>Issue Date</label>
                                       <input type="text" placeholder=" " />
@@ -584,56 +579,68 @@ When completed click the save to PDF button at the bottom.  This will open your 
                                     </div>
     
 
-
-	<form id="creditcardForm">
-
-    
-                                <h5>Credit Card Information</h5>
-
-				<div>
-                                <div class="row">
-                                    <div class="large-6 medium-6 columns">
-                                      <label>Name on card</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
-                                    <div class="large-6 medium-6 columns">
-                                      <label>Card number</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
+<form id="creditcardForm">
+  <h5>Credit Card Information</h5>
+          <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Name on card</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Card number</label>
+            <input type="text" placeholder=" " />
+          </div>
 				</div>
 				<div class="row">
-                                    <div class="large-4 medium-4 columns">
-                                      <label>Card expiry date</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
-                                    <div class="large-4 medium-4 columns">
-                                     <label>Security code</label>
-                                      <input type="text" placeholder=" " />
-                                    </div>
+        <div class="large-4 medium-4 columns">
+            <label>Card expiry date</label>
+            <input type="text" placeholder=" " />
+         </div>
+         <div class="large-4 medium-4 columns">
+             <label>Security code</label>
+            <input type="text" placeholder=" " />
+         </div>
 				</div>
-				</div>
+        <div class = "hide-for-print large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('creditcardForm');" class="hide-for-print small radius button"">Add More</a>
+</div> 
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+<hr>
+</form>
+        
+<form id="freeForm">
+          <h5>Personal Addition</h5>
+          <div class="row">
+              <div class="large-6 medium-6 columns">
+                <input type="text" placeholder="Title of professional/account" />
 
-
-                                <div class = "hide-for-print large-4 medium-4 columns">
-                                    <a href="javascript:;" onclick="addInput('creditcardForm');" class="hide-for-print small radius button"">Add More</a>
+              </div>
+              <div class="large-6 medium-6 columns">
+                <input type="text" placeholder="Account Number " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+          </div>
+          <div class = "hide-for-print large-4 medium-4 columns">
+            <a href="javascript:;" onclick="addInput('freeForm');" class="hide-for-print small radius button"">Add More</a>
 				</div> 
 				<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
+        <hr />
         </form>
-<hr />
 
-                                <div class="large-4 medium-4 columns">
-                                    <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
+
+        <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
 				</div>
-
-
-                                <!-- <div class="large-4 medium-4 columns">
-                                    <a href="javascript:;" onclick="savetoPDF('portrait');" class="small radius button"">Save To PDF</a><br
-/>
-                                </div> -->
-
-
-<hr />
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
