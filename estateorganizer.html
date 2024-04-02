@@ -812,6 +812,32 @@ When completed click the save to PDF button at the bottom.  This will open your 
           <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
 				</div>
 
+<button id="exportButton">Export to CSV</button>
+
+<script>
+  document.getElementById('exportButton').addEventListener('click', function() {
+    var data = [];
+    var forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      var formId = form.getAttribute('id');
+      var values = Array.from(form.querySelectorAll('input'))
+                .map(input => input.value)
+                .filter(value => !value.includes('Remove') && !value.includes('MBS6A6RHAMPBE'));
+    var row = [formId, ...values];
+    data.push(row);
+});
+
+    var csvContent = "data:text/csv;charset=utf-8," + data.map(row => row.join(",")).join("\n");
+    var encodedUri = encodeURI(csvContent);
+    var link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "data.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Clean up the DOM after download
+  });
+</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
