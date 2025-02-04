@@ -4,31 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estate Organizer | Welcome</title>
-    <link rel="stylesheet" href="js/css/foundation.css" />
-    <script src="js/printToPDF.js"></script>
-    <script src="js/addInput.js"></script>
-    <script src="js/delButtons.js"></script>
-    <!-- <script src="js/vendor/modernizr.js"></script> -->
-    <script src="js/js/vendor/jquery.js"></script>
-    <script src="js/js/vendor/foundation.min.js"></script>
-
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/foundation/printToPDF.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/addInput.js"></script>
+    <script src="js/foundation/delButtons.js"></script>
 
   </head>
   <body>
 
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell large-12">
-          <h1>Welcome to Estate Organizer</h1>
-        </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to Estate Organizer</h1>
       </div>
     </div>
     
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell large-12">
-          <div class="callout success">
-
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
 <!--		<h3>Compliments of:  Franca Perciballi EPC, CHS</h3> -->
 		<p>
 
@@ -43,171 +38,92 @@ When completed click the save to PDF button at the bottom.  This will open your 
 </p>
 <p>Everything you type in this form resides exclusively on your computer, and nothing is saved elsewhere.  None of the data is transmitted to our servers in order to protect your privacy. The contents should be considered private and protected (like you would with cash, gold, and sensistive documents).
 </p>
-	 </div>
-  </div>
-  </div>
+	</div>
+    </div>
                                 
         <hr />
 
-<div class="callout primary">
-    <h5>Personal Information</h5>
-            <p>Fill out the information below for an individual.  You can add more individuals by pushing the button at the bottom of this section.</p>
+    <div class="callout panel">
+      <h5>Personal Information</h5>
+        <p>Fill out the information below for an individual.  You can add more individuals by pushing the button at the bottom of this section.</p>
+    </div>
+
+<form id="personalinfoForm">
+  <div class="row">Individuals Full Legal Name<input type ="text" autocomplete="on"></div>
+    <div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Birth Certificate Number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Issue Date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 columns">
+          <label>Citizenship Card Number</label>
+          <input type="text" placeholder=" " />
         </div>
-<form id="fullNameForm">
-  <div class="grid-x">
-    <label>Full Legal Name</label>
-    <input type ="text" placeholder=" "></div>
+        <div class="large-4 medium-4 columns">
+          <label>Issue Date</label>
+          <input type="text" placeholder=" " />
+        </div>
+				</div>
+				<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Driver's License Number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Expiry Date</label>
+            <input type="text" placeholder=" " />
+          </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Health Card Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Expiry Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Marriage Certificate Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Issue Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Passport Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Expiry Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Social Insurance/Security Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
 
 <hr />
-</form>
-
-<form id="driverLicenseForm">
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-4 large-4">
-      <label>Driver's License</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-  </div>
-</form>
-
-<form id="birthCertificateForm">
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-4 large-4">
-      <label>Birth Certificate</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
-      <label>Issue Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-    </div>
-  </div>
-</form>
-
-<form id="citizenshipForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Citizenship Certificate</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Issue Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="immigrationForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Immigration Document</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="studentIdForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Student ID</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="stateIdForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Province/State ID</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="militaryIdForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Military ID</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="healthCardForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Health Card</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="marriageCertificateForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Marriage Certificate</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Issue Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="passportForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Passport</label>
-      <input type="text" placeholder=" " />
-    </div>
-    <div class="large-4 medium-4 columns">
-      <label>Expiry Date</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
-</form>
-
-<form id="socialInsuranceForm">
-  <div class="row">
-    <div class="large-4 medium-4 columns">
-      <label>Social Insurance/Security</label>
-      <input type="text" placeholder=" " />
-    </div>
-  </div>
 </form>
 
 <form id="personalinfoFormblank">
     <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>Additional Personal Information</label>
+        <label>Additional Number</label>
         <input type="text" placeholder=" " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -221,41 +137,39 @@ When completed click the save to PDF button at the bottom.  This will open your 
 <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
 
 </form>
-     <div class="callout primary">
+      <div class="callout panel radius">
           <h5>Professionals Contact Information</h5>
               <p>This section is for all of the professionals in your circle.  You can add more individuals by pushing the button at the bottom of this section.</p>
       </div>
 
 <form id="lawyerForm">
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6 large-6">
+				<h5>Lawyer</h5>
+      <div class="row">
+          <div class="large-6 large-6 columns">
             <label>Lawyer</label>
             <input type="text" placeholder=" " />
-      </div>
-      <div class="cell medium-6 large-6">
+          </div>
+          <div class="large-6 medium-6 columns">
             <label>Name of practice</label>
             <input type="text" placeholder=" " />
-      </div>
-   </div>
-    <div class="grid-x grid-margin-x">
-    <div class="cell medium-4 large-4">
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
             <label>Phone number</label>
             <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
+          </div>
+          <div class="large-4 medium-4 columns">
             <label>Email address</label>
             <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
+          </div>
+          <div class="large-4 medium-4 columns">
             <label>Office Address</label>
             <input type="text" placeholder=" " />
-    </div>
-  </div>
-
-
-  <div class="large-4 medium-4 columns">
-    <a href="javascript:;" onclick="addInput('lawyerForm');" class="hide-for-print small radius button"">Add More</a></div>
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('lawyerForm');" class="hide-for-print small radius button"">Add More</a><br/></div>
 <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
 
 <hr />
@@ -264,277 +178,318 @@ When completed click the save to PDF button at the bottom.  This will open your 
 
 
 <form id="accountantForm">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6 large-6">
+<h5>Accountant</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
             <label>Accountant</label>
             <input type="text" placeholder=" " />
-      </div>
-      <div class="cell medium-6 large-6">
+          </div>
+          <div class="large-6 medium-6 columns">
             <label>Name of practice</label>
             <input type="text" placeholder=" " />
-      </div>
-    </div>
-    <div class="grid-x grid-margin-x">
-    <div class="cell medium-4 large-4">
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
             <label>Phone number</label>
             <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
+          </div>
+          <div class="large-4 medium-4 columns">
             <label>Email address</label>
             <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
+          </div>
+          <div class="large-4 medium-4 columns">
             <label>Office Address</label>
             <input type="text" placeholder=" " />
-    </div>
-   </div>
-
+          </div>
+</div>
       <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('accountantForm');" class="hide-for-print small radius button">Add More</a></div>
+          <a href="javascript:;" onclick="addInput('accountantForm');" class="hide-for-print small radius button"">Add More</a></div>
       <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
 
 <hr />
 
 </form>
 
-<form id="financialAdvisorForm">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6 large-6">
+<form id="financialadvForm">
+
+      <h5>Finalcial Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
             <label>Financial Advisor</label>
             <input type="text" placeholder=" " />
           </div>
-          <div class="cell medium-6 large-6">
+          <div class="large-6 medium-6 columns">
             <label>Name of practice</label>
             <input type="text" placeholder=" " />
           </div>
-     </div>
-     <div class="grid-x grid-margin-x">
-     <div class="cell medium-4 large-4">
-            <label>Phone number</label>
-            <input type="text" placeholder=" " />
-      </div>
-      <div class="cell medium-4 large-4">
-            <label>Email address</label>
-            <input type="text" placeholder=" " />
-      </div>
-          <div class="cell medium-4 large-4">
-            <label>Office Address</label>
-            <input type="text" placeholder=" " />
-      </div>
-    </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('financialAdvisorForm');" class="hide-for-print small radius button"">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
-
-</form>
-
-<form id="insuranceForm">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6 large-6">
-            <label>Home & Auto Insurance</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-6 large-6">
-            <label>Name of practice</label>
-            <input type="text" placeholder=" " />
-          </div>
-    </div>
-    <div class="grid-x grid-margin-x">
-    <div class="cell medium-4 large-4">
-            <label>Phone number</label>
-            <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
-            <label>Email address</label>
-            <input type="text" placeholder=" " />
-    </div>
-    <div class="cell medium-4 large-4">
-            <label>Office Address</label>
-            <input type="text" placeholder=" " />
-    </div>
-  </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('insuranceForm');" class="hide-for-print small radius button"">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
-</form>
-
-<form id="lifeinsuranceForm">
-    <div class="grid-x grid-margin-x">
-      <div class="cell medium-6 large-6">
-            <label>Life Insurance</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-6 large-6">
-            <label>Name of practice</label>
-            <input type="text" placeholder=" " />
-          </div>
-  </div>
-    <div class="grid-x grid-margin-x">
-    <div class="cell medium-4 large-4">
-            <label>Phone number</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-4 large-4">
-            <label>Email address</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-4 large-4">
-            <label>Office Address</label>
-            <input type="text" placeholder=" " />
-          </div>
-  </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('lifeinsuranceForm');" class="hide-for-print small radius button"">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
-</form>
-
-
-       <div class="callout primary">
-            <h5>Health Care Provider Contact Information</h5>
-              <p>This section is for all of the health care specialists in your circle.  You can add more individuals by pushing the button at the bottom of this section.</p>
-       </div>
-
-       <form id="familyDoctorForm">
-        <div class="grid-x grid-margin-x">
-          <div class="cell medium-6 large-6">
-                <label>Family Doctor</label>
-                <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-6 large-6">
-                <label>Name of practice</label>
-                <input type="text" placeholder=" " />
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-        <div class="cell medium-4 large-4">
-                <label>Phone number</label>
-                <input type="text" placeholder=" " />
-        </div>
-        <div class="cell medium-4 large-4">
-                <label>Email address</label>
-                <input type="text" placeholder=" " />
-        </div>
-        <div class="cell medium-4 large-4">
-                <label>Office Address</label>
-                <input type="text" placeholder=" " />
-        </div>
-       </div>
-    
+</div>
+<div class="row">
           <div class="large-4 medium-4 columns">
-              <a href="javascript:;" onclick="addInput('familyDoctorForm');" class="hide-for-print small radius button">Add More</a></div>
-          <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-    
-    <hr />
-    
-    </form>
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('financialadvForm');" class="hide-for-print small radius button"">Add More</a></div>
 
-    <form id="specialistForm">
-      <div class="grid-x grid-margin-x">
-        <div class="cell medium-6 large-6">
-              <label>Specialist</label>
-              <input type="text" placeholder=" " />
-        </div>
-        <div class="cell medium-6 large-6">
-              <label>Name of practice</label>
-              <input type="text" placeholder=" " />
-        </div>
-      </div>
-      <div class="grid-x grid-margin-x">
-      <div class="cell medium-4 large-4">
-              <label>Phone number</label>
-              <input type="text" placeholder=" " />
-      </div>
-      <div class="cell medium-4 large-4">
-              <label>Email address</label>
-              <input type="text" placeholder=" " />
-      </div>
-      <div class="cell medium-4 large-4">
-              <label>Office Address</label>
-              <input type="text" placeholder=" " />
-      </div>
-     </div>
-  
-        <div class="large-4 medium-4 columns">
-            <a href="javascript:;" onclick="addInput('specialistForm');" class="hide-for-print small radius button">Add More</a></div>
-        <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-  
-  <hr />
-  
-  </form>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+
+</form>
+
+<form id="homeautoForm">
+<h5>Home & Auto Insurance Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Home & Auto Insurance Advisor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('homeautoForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="insuranceadvForm">
+      <h5>Insurance Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Insurance Advisor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('insuranceadvForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
 
 
-      <div class="callout primary">
-            <h5>Medication</h5>
+      <div class="callout panel radius">
+          <h5>Health Care Provider Contact Information</h5>
+              <p>This section is for all of the health care specialists in your circle.  You can add more individuals by pushing the button at the bottom of this section.</p>
+          </div>
+
+<form id="familydocForm">
+
+      <h5>Family Doctor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Family Doctor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('familydocForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="optomitristForm">
+
+      <h5>Optometrist</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Optometrist</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+
+
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('optomitristForm');" class="hide-for-print small radius button"">Add More</a>
+      </div>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="specialdocForm">
+
+      <h5>Specialty Doctor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Specialty Doctor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('specialdocForm');" class="hide-for-print small radius button"">Add More</a>
+      </div>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+      <div class="callout panel">
+          <h5>Medication</h5>
               <p>This section is for all of the medication you are taking.  You can add more medications by pushing the button at the bottom of this section.</p>
-      </div>
+          </div>
 
 <form id="medicationsForm">
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6 large-6">
+
+      <h5>Medication</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
             <label>Name of prescription</label>
             <input type="text" placeholder=" " />
           </div>
-          <div class="cell medium-6 large-6">
+          <div class="large-6 medium-6 columns">
             <label>Dosage</label>
             <input type="text" placeholder=" " />
           </div>
-     </div>
-     <div class="grid-x grid-margin-x">
-     <div class="cell medium-4 large-4">
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
             <label>Frequency</label>
             <input type="text" placeholder=" " />
           </div>
-          <div class="cell medium-4 large-4">
+          <div class="large-4 medium-4 columns">
             <label>Start date</label>
             <input type="text" placeholder=" " />
           </div>
-          <div class="cell medium-4 large-4">
+          <div class="large-4 medium-4 columns">
             <label>Diagnosis</label>
             <input type="text" placeholder=" " />
           </div>
-      </div>
-    </div>
+</div>
 </form>
 
 <form id="supplementsForm">
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6 large-6">
-            <label>Supplements</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-6 large-6">
-            <label>Dosage</label>
-            <input type="text" placeholder=" " />
-          </div>
-     </div>
-     <div class="grid-x grid-margin-x">
-     <div class="cell medium-4 large-4">
-            <label>Frequency</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-4 large-4">
-            <label>Start date</label>
-            <input type="text" placeholder=" " />
-          </div>
-          <div class="cell medium-4 large-4">
-            <label>Diagnosis</label>
-            <input type="text" placeholder=" " />
-          </div>
+
+  <h5>Supplements</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name of supplement</label>
+        <input type="text" placeholder=" " />
       </div>
-    </div>
-</form>
+      <div class="large-6 medium-6 columns">
+        <label>Dosage</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Frequency</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Start date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Diagnosis</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
 
   <div class="large-4 medium-4 columns">
       <a href="javascript:;" onclick="addInput('supplementsForm');" class="hide-for-print small radius button"">Add More</a>
@@ -544,12 +499,14 @@ When completed click the save to PDF button at the bottom.  This will open your 
 <hr />
 </form>
 
-<div class="callout primary">
-    <h5>Allergies</h5>
+<div class="callout panel">
+  <h5>Allergies</h5>
       <p>This section is for all of the allergies people should be aware of under power of attorney.</p>
   </div>
 
 <form id="allergenForm">
+
+<h5>Allergy</h5>
 <div class="row">
   <div class="large-6 medium-6 columns">
     <label>Substance</label>
@@ -575,15 +532,16 @@ When completed click the save to PDF button at the bottom.  This will open your 
 <hr />
 </form>
 
-     <div class="callout primary">
-            <h5>Banking & Financial Information</h5>
+      <div class="callout panel">
+          <h5>Banking & Financial Information</h5>
               <p>This section is for all of the financial accounts you have.</p>
-      </div>
+          </div>
 
 <form id="checkingForm">
+      <h5>Checking Account Information</h5>
       <div class="row">
           <div class="large-6 medium-6 columns">
-            <label>Checking Account</label>
+            <label>Name on account</label>
             <input type="text" placeholder=" " />
           </div>
           <div class="large-6 medium-6 columns">
@@ -608,9 +566,10 @@ When completed click the save to PDF button at the bottom.  This will open your 
 </form>
 
 <form id="savingsForm">
+  <h5>Savings Account Information</h5>
   <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>Savings Account</label>
+        <label>Name on account</label>
         <input type="text" placeholder=" " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -635,9 +594,10 @@ When completed click the save to PDF button at the bottom.  This will open your 
 </form>
 
 <form id="rrspForm">
+  <h5>RRSP Account Information</h5>
   <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>RRSP Account</label>
+        <label>Name on account</label>
         <input type="text" placeholder=" " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -662,9 +622,10 @@ When completed click the save to PDF button at the bottom.  This will open your 
 </form>
 
 <form id="tfsaForm">
+  <h5>TFSA Account Information</h5>
   <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>TFSA Account</label>
+        <label>Name on account</label>
         <input type="text" placeholder=" " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -689,9 +650,10 @@ When completed click the save to PDF button at the bottom.  This will open your 
 </form>
 
 <form id="investmentForm">
+  <h5>Investment Account Information</h5>
   <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>Investment Account</label>
+        <label>Name on account</label>
         <input type="text" placeholder=" " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -715,32 +677,6 @@ When completed click the save to PDF button at the bottom.  This will open your 
 
 </div>
 
-<form id="employerForm">
-  <div class="row">
-      <div class="large-6 medium-6 columns">
-        <label>Employer Retirement Account</label>
-        <input type="text" placeholder=" " />
-      </div>
-      <div class="large-6 medium-6 columns">
-        <label>Name of bank</label>
-        <input type="text" placeholder=" " />
-      </div>
-</div>
-<div class="row">
-      <div class="large-4 medium-4 columns">
-        <label>Branch address</label>
-        <input type="text" placeholder=" " />
-      </div>
-      <div class="large-4 medium-4 columns">
-        <label>Phone number</label>
-        <input type="text" placeholder=" " />
-      </div>
-      <div class="large-4 medium-4 columns">
-        <label>Account number</label>
-        <input type="text" placeholder=" " />
-      </div>
-</div>
-</form>
 
 <div class="large-4 medium-4 columns">
   <a href="javascript:;" onclick="addInput('investmentForm');" class="hide-for-print small radius button"">Add More Investments</a>
@@ -749,10 +685,39 @@ When completed click the save to PDF button at the bottom.  This will open your 
 <hr />
 </form>
 
-<form id="cryptoForm">
+<form id="employerForm">
+  <h5>Employer Retirement Account Information</h5>
   <div class="row">
       <div class="large-6 medium-6 columns">
-        <label>Crypto Wallet</label>
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+</form>
+
+<form id="cryptoForm">
+  <h5>Crypto Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Coin/Token/NFT</label>
         <input type="text" placeholder="BTC " />
       </div>
       <div class="large-6 medium-6 columns">
@@ -770,16 +735,17 @@ When completed click the save to PDF button at the bottom.  This will open your 
 <hr />
 </form>
 
-     <div class="callout primary">
-            <h5>Credit Cards</h5>
+      <div class="callout panel">
+          <h5>Credit Cards</h5>
               <p>This section is for all of the credit cards you have. These may be helpful under power of attorney, and should be cancelled soon after death.</p>
       </div>
     
 
 <form id="creditcardForm">
+  <h5>Credit Card Information</h5>
           <div class="row">
           <div class="large-6 medium-6 columns">
-            <label>Credit Card</label>
+            <label>Name on card</label>
             <input type="text" placeholder=" " />
           </div>
           <div class="large-6 medium-6 columns">
@@ -846,23 +812,19 @@ When completed click the save to PDF button at the bottom.  This will open your 
           <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
 				</div>
 
-<button id="exportButton" class = "hide-for-print large radius button">Export to CSV</button>
-
+<button id="exportButton">Export to CSV</button>
 
 <script>
   document.getElementById('exportButton').addEventListener('click', function() {
     var data = [];
-    var header = ["Title", "Values"]; // Add a header row
-    data.push(header);
     var forms = document.querySelectorAll('form');
-    forms.forEach(function(form) {
-  var label = form.querySelector('label');
-  var inputs = form.querySelectorAll('input:not([type="button"])');
-  var row = [label ? label.textContent : ''];
-  inputs.forEach(function(input) {
-    row.push(input.value);
-  });
-  data.push(row);
+    forms.forEach(form => {
+      var formId = form.getAttribute('id');
+      var values = Array.from(form.querySelectorAll('input'))
+                .map(input => input.value)
+                .filter(value => !value.includes('Remove') && !value.includes('MBS6A6RHAMPBE'));
+    var row = [formId, ...values];
+    data.push(row);
 });
 
     var csvContent = "data:text/csv;charset=utf-8," + data.map(row => row.join(",")).join("\n");
@@ -875,7 +837,6 @@ When completed click the save to PDF button at the bottom.  This will open your 
     document.body.removeChild(link); // Clean up the DOM after download
   });
 </script>
-
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -894,7 +855,8 @@ When completed click the save to PDF button at the bottom.  This will open your 
   <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
   </form>
   
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "95afe191752e466a8dc325badfa0ce9f"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f0d2ba8bd6c6454f94fc5a0f4e774919"}'></script><!-- End Cloudflare Web Analytics -->
+
 
     <script>
       $(document).foundation();
