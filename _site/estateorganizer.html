@@ -1,0 +1,865 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estate Organizer | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/foundation/printToPDF.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/addInput.js"></script>
+    <script src="js/foundation/delButtons.js"></script>
+
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to Estate Organizer</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+<!--		<h3>Compliments of:  Franca Perciballi EPC, CHS</h3> -->
+		<p>
+
+<p>
+Organize your estate and document what you may leave behind.
+</p>
+<p>
+Fill out the fields on this form.  Add or remove sections with the buttons provided.  For instance if you have multiple credit cards simply click add more in that section.
+</p>
+<p>
+When completed click the save to PDF button at the bottom.  This will open your computers print dialog where you can print either to paper or to a PDF file.
+</p>
+<p>Everything you type in this form resides exclusively on your computer, and nothing is saved elsewhere.  None of the data is transmitted to our servers in order to protect your privacy. The contents should be considered private and protected (like you would with cash, gold, and sensistive documents).
+</p>
+	</div>
+    </div>
+                                
+        <hr />
+
+    <div class="callout panel">
+      <h5>Personal Information</h5>
+        <p>Fill out the information below for an individual.  You can add more individuals by pushing the button at the bottom of this section.</p>
+    </div>
+
+<form id="personalinfoForm">
+  <div class="row">Individuals Full Legal Name<input type ="text" autocomplete="on"></div>
+    <div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Birth Certificate Number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Issue Date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 columns">
+          <label>Citizenship Card Number</label>
+          <input type="text" placeholder=" " />
+        </div>
+        <div class="large-4 medium-4 columns">
+          <label>Issue Date</label>
+          <input type="text" placeholder=" " />
+        </div>
+				</div>
+				<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Driver's License Number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Expiry Date</label>
+            <input type="text" placeholder=" " />
+          </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Health Card Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Expiry Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Marriage Certificate Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Issue Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Passport Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Expiry Date</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Social Insurance/Security Number</label>
+                <input type="text" placeholder=" " />
+              </div>
+          </div>
+
+<hr />
+</form>
+
+<form id="personalinfoFormblank">
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Additional Number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Issue/Expiry Date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      </div>
+<div class="large-4 medium-4 columns">
+  <a href="javascript:;" onclick="addInput('personalinfoFormblank');" class="hide-for-print small radius button"">Add More</a></div>
+
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+</form>
+      <div class="callout panel radius">
+          <h5>Professionals Contact Information</h5>
+              <p>This section is for all of the professionals in your circle.  You can add more individuals by pushing the button at the bottom of this section.</p>
+      </div>
+
+<form id="lawyerForm">
+				<h5>Lawyer</h5>
+      <div class="row">
+          <div class="large-6 large-6 columns">
+            <label>Lawyer</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('lawyerForm');" class="hide-for-print small radius button"">Add More</a><br/></div>
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+
+</form>
+
+
+<form id="accountantForm">
+<h5>Accountant</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Accountant</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('accountantForm');" class="hide-for-print small radius button"">Add More</a></div>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+
+</form>
+
+<form id="financialadvForm">
+
+      <h5>Finalcial Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Financial Advisor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('financialadvForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+
+</form>
+
+<form id="homeautoForm">
+<h5>Home & Auto Insurance Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Home & Auto Insurance Advisor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('homeautoForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="insuranceadvForm">
+      <h5>Insurance Advisor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Insurance Advisor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('insuranceadvForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+
+      <div class="callout panel radius">
+          <h5>Health Care Provider Contact Information</h5>
+              <p>This section is for all of the health care specialists in your circle.  You can add more individuals by pushing the button at the bottom of this section.</p>
+          </div>
+
+<form id="familydocForm">
+
+      <h5>Family Doctor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Family Doctor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('familydocForm');" class="hide-for-print small radius button"">Add More</a></div>
+
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="optomitristForm">
+
+      <h5>Optometrist</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Optometrist</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+
+
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('optomitristForm');" class="hide-for-print small radius button"">Add More</a>
+      </div>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<form id="specialdocForm">
+
+      <h5>Specialty Doctor</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Specialty Doctor</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of practice</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Email address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Office Address</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+
+      <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('specialdocForm');" class="hide-for-print small radius button"">Add More</a>
+      </div>
+      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+      <div class="callout panel">
+          <h5>Medication</h5>
+              <p>This section is for all of the medication you are taking.  You can add more medications by pushing the button at the bottom of this section.</p>
+          </div>
+
+<form id="medicationsForm">
+
+      <h5>Medication</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Name of prescription</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Dosage</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Frequency</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Start date</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Diagnosis</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+</form>
+
+<form id="supplementsForm">
+
+  <h5>Supplements</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name of supplement</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Dosage</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Frequency</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Start date</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Diagnosis</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+
+  <div class="large-4 medium-4 columns">
+      <a href="javascript:;" onclick="addInput('supplementsForm');" class="hide-for-print small radius button"">Add More</a>
+  </div>
+  <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+<div class="callout panel">
+  <h5>Allergies</h5>
+      <p>This section is for all of the allergies people should be aware of under power of attorney.</p>
+  </div>
+
+<form id="allergenForm">
+
+<h5>Allergy</h5>
+<div class="row">
+  <div class="large-6 medium-6 columns">
+    <label>Substance</label>
+    <input type="text" placeholder=" " />
+  </div>
+  <div class="large-6 medium-6 columns">
+    <label>Large/small Ammount</label>
+    <input type="text" placeholder=" " />
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 medium-4 columns">
+    <label>Alternative</label>
+    <input type="text" placeholder=" " />
+  </div>
+</div>
+
+<div class="large-4 medium-4 columns">
+  <a href="javascript:;" onclick="addInput('allergenForm');" class="hide-for-print small radius button"">Add More</a>
+</div>
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+      <div class="callout panel">
+          <h5>Banking & Financial Information</h5>
+              <p>This section is for all of the financial accounts you have.</p>
+          </div>
+
+<form id="checkingForm">
+      <h5>Checking Account Information</h5>
+      <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Name on account</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Name of bank</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+<div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Branch address</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Phone number</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Account number</label>
+            <input type="text" placeholder=" " />
+          </div>
+</div>
+</form>
+
+<form id="savingsForm">
+  <h5>Savings Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+</form>
+
+<form id="rrspForm">
+  <h5>RRSP Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+</form>
+
+<form id="tfsaForm">
+  <h5>TFSA Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+</form>
+
+<form id="investmentForm">
+  <h5>Investment Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+
+</div>
+
+
+<div class="large-4 medium-4 columns">
+  <a href="javascript:;" onclick="addInput('investmentForm');" class="hide-for-print small radius button"">Add More Investments</a>
+</div>
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+<hr />
+</form>
+
+<form id="employerForm">
+  <h5>Employer Retirement Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Name on account</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Name of bank</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+<div class="row">
+      <div class="large-4 medium-4 columns">
+        <label>Branch address</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Phone number</label>
+        <input type="text" placeholder=" " />
+      </div>
+      <div class="large-4 medium-4 columns">
+        <label>Account number</label>
+        <input type="text" placeholder=" " />
+      </div>
+</div>
+</form>
+
+<form id="cryptoForm">
+  <h5>Crypto Account Information</h5>
+  <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Coin/Token/NFT</label>
+        <input type="text" placeholder="BTC " />
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Phrase</label>
+        <input type="text" placeholder="12-16 word passphrase " />
+      </div>
+
+</div>
+
+<div class="large-4 medium-4 columns">
+  <a href="javascript:;" onclick="addInput('cryptoForm');" class="hide-for-print small radius button"">Add More Crypto</a>
+</div>
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+
+<hr />
+</form>
+
+      <div class="callout panel">
+          <h5>Credit Cards</h5>
+              <p>This section is for all of the credit cards you have. These may be helpful under power of attorney, and should be cancelled soon after death.</p>
+      </div>
+    
+
+<form id="creditcardForm">
+  <h5>Credit Card Information</h5>
+          <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Name on card</label>
+            <input type="text" placeholder=" " />
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Card number</label>
+            <input type="text" placeholder=" " />
+          </div>
+				</div>
+				<div class="row">
+        <div class="large-4 medium-4 columns">
+            <label>Card expiry date</label>
+            <input type="text" placeholder=" " />
+         </div>
+         <div class="large-4 medium-4 columns">
+             <label>Security code</label>
+            <input type="text" placeholder=" " />
+         </div>
+				</div>
+        <div class = "hide-for-print large-4 medium-4 columns">
+          <a href="javascript:;" onclick="addInput('creditcardForm');" class="hide-for-print small radius button"">Add More</a>
+</div> 
+<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+<hr>
+</form>
+        
+<form id="freeForm">
+          <h5>Personal Addition</h5>
+          <div class="row">
+              <div class="large-6 medium-6 columns">
+                <input type="text" placeholder="Title of professional/account" />
+
+              </div>
+              <div class="large-6 medium-6 columns">
+                <input type="text" placeholder="Account Number " />
+              </div>
+          </div>
+          <div class="row">
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <input type="text" placeholder="Other information " />
+              </div>
+          </div>
+          <div class = "hide-for-print large-4 medium-4 columns">
+            <a href="javascript:;" onclick="addInput('freeForm');" class="hide-for-print small radius button"">Add More</a>
+				</div> 
+				<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+        <hr />
+        </form>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="panel">
+        <p>Everything you type in this form resides exclusively on your computer, and nothing is saved elsewhere.  None of the data is transmitted to our servers in order to protect your privacy. The contents should be considered private and protected (like you would with cash, gold, and sensistive documents).
+        </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 medium-4 columns">
+          <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
+				</div>
+
+<button id="exportButton">Export to CSV</button>
+
+<script>
+  document.getElementById('exportButton').addEventListener('click', function() {
+    var data = [];
+    var forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      var formId = form.getAttribute('id');
+      var values = Array.from(form.querySelectorAll('input'))
+                .map(input => input.value)
+                .filter(value => !value.includes('Remove') && !value.includes('MBS6A6RHAMPBE'));
+    var row = [formId, ...values];
+    data.push(row);
+});
+
+    var csvContent = "data:text/csv;charset=utf-8," + data.map(row => row.join(",")).join("\n");
+    var encodedUri = encodeURI(csvContent);
+    var link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "data.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Clean up the DOM after download
+  });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55270109-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+  <input type="hidden" name="hosted_button_id" value="MBS6A6RHAMPBE" />
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+  
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f0d2ba8bd6c6454f94fc5a0f4e774919"}'></script><!-- End Cloudflare Web Analytics -->
+
+
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
