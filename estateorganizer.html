@@ -211,12 +211,14 @@ Everything you type in this form resides exclusively on your computer, and nothi
       </div>
       </div>
 
-  <div class="large-6 medium-6 columns">
-  <a href="javascript:;" onclick="addInput('personalinfoFormblank');" class="hide-for-print small radius button">Add More</a></div>
-
-<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
+      <div class="grid-x">
+        <div class="cell medium-6 large-6">
+          <a href="javascript:;" onclick="addInput('personalinfoFormblank');" class="hide-for-print small radius button">Add More</a>
+          <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+      </div>
 </form>
+
+<hr />
 
 <div class="callout primary">
         <h5>Professionals Contact Information</h5>
@@ -249,14 +251,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
     </div>
   </div>
 
-
-  <div class="large-4 medium-4 columns">
-    <a href="javascript:;" onclick="addInput('lawyerForm');" class="hide-for-print small radius button">Add More</a></div>
-  
-  <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('lawyerForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
-
+<hr />
 
 <form id="accountantForm">
     <div class="grid-x grid-margin-x">
@@ -283,14 +284,14 @@ Everything you type in this form resides exclusively on your computer, and nothi
             <input type="text" placeholder=" " />
     </div>
    </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('accountantForm');" class="hide-for-print small radius button">Add More</a></div>
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
+   <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('accountantForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 
 </form>
+<hr />
 
 <form id="financialAdvisorForm">
     <div class="grid-x grid-margin-x">
@@ -317,15 +318,14 @@ Everything you type in this form resides exclusively on your computer, and nothi
             <input type="text" placeholder=" " />
       </div>
     </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('financialAdvisorForm');" class="hide-for-print small radius button">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
+    <div class="grid-x">
+      <div class="cell medium-6 large-6">
+        <a href="javascript:;" onclick="addInput('financialAdvisorForm');" class="hide-for-print small radius button">Add More</a>
+        <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+    </div>
 
 </form>
+<hr />
 
 <form id="insuranceForm">
     <div class="grid-x grid-margin-x">
@@ -352,14 +352,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
             <input type="text" placeholder=" " />
     </div>
   </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('insuranceForm');" class="hide-for-print small radius button">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('insuranceForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
+<hr />
 
 <form id="lifeinsuranceForm">
     <div class="grid-x grid-margin-x">
@@ -386,15 +385,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
             <input type="text" placeholder=" " />
           </div>
   </div>
-
-      <div class="large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('lifeinsuranceForm');" class="hide-for-print small radius button">Add More</a></div>
-
-      <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('lifeinsuranceForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
-
+<hr />
 
        <div class="callout primary">
             <h5>Health Care Provider Contact Information</h5>
@@ -426,14 +423,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
                 <input type="text" placeholder=" " />
         </div>
        </div>
-    
-          <div class="large-4 medium-4 columns">
-              <a href="javascript:;" onclick="addInput('familyDoctorForm');" class="hide-for-print small radius button">Add More</a></div>
-          <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-    
-    <hr />
-    
+       <div class="grid-x">
+        <div class="cell medium-6 large-6">
+          <a href="javascript:;" onclick="addInput('familyDoctorForm');" class="hide-for-print small radius button">Add More</a>
+          <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+      </div>
     </form>
+ <hr />
 
     <form id="specialistForm">
       <div class="grid-x grid-margin-x">
@@ -460,13 +456,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
               <input type="text" placeholder=" " />
       </div>
      </div>
-  
+     <div class="grid-x">
       <div class="cell medium-6 large-6">
-            <a href="javascript:;" onclick="addInput('specialistForm');" class="hide-for-print small radius button">Add More</a></div>
-        <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-        <hr />
+        <a href="javascript:;" onclick="addInput('specialistForm');" class="hide-for-print small radius button">Add More</a>
+        <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+    </div>
     </form>
-
+<hr />
 
       <div class="callout primary">
             <h5>Medication</h5>
@@ -530,14 +526,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
             <input type="text" placeholder=" " />
       </div>
    </div>
-
-    <div class="large-6 medium-6 columns">
-      <a href="javascript:;" onclick="addInput('supplementsForm');" class="hide-for-print small radius button">Add More</a></div>
-    
-    <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-    
-<hr />
+   <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('supplementsForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
+<hr />
 
 <div class="callout primary">
     <h5>Allergies</h5>
@@ -561,14 +556,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
     <input type="text" placeholder=" " />
   </div>
 </div>
-
-<div class="large-4 medium-4 columns">
-  <a href="javascript:;" onclick="addInput('allergenForm');" class="hide-for-print small radius button">Add More</a>
+<div class="grid-x">
+  <div class="cell medium-6 large-6">
+    <a href="javascript:;" onclick="addInput('allergenForm');" class="hide-for-print small radius button">Add More</a>
+    <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
 </div>
-<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
 </form>
+<hr />
 
      <div class="callout primary">
             <h5>Banking & Financial Information</h5>
@@ -688,12 +682,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
   </div>
 </div>
 
-<div class="large-4 medium-4 columns">
-  <a href="javascript:;" onclick="addInput('investmentForm');" class="hide-for-print small radius button">Add More Investments</a>
+<div class="grid-x">
+  <div class="cell medium-6 large-6">
+    <a href="javascript:;" onclick="addInput('investmentForm');" class="hide-for-print small radius button">Add More</a>
+    <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
 </div>
-<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-<hr />
 </form>
+<hr />
 
 <form id="cryptoForm">
   <div class="grid-x grid-margin-x">
@@ -707,13 +702,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
     </div>
   </div>
 
-<div class="large-4 medium-4 columns">
-  <a href="javascript:;" onclick="addInput('cryptoForm');" class="hide-for-print small radius button">Add More Crypto</a>
-</div>
-<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-
-<hr />
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('cryptoForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
+<hr />  
 
      <div class="callout primary">
             <h5>Credit Cards</h5>
@@ -743,14 +738,15 @@ Everything you type in this form resides exclusively on your computer, and nothi
     </div>
 	</div>
 
-
-    <div class = "hide-for-print large-4 medium-4 columns">
-          <a href="javascript:;" onclick="addInput('creditcardForm');" class="hide-for-print small radius button">Add More</a>
-    </div> 
-    <input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-<hr>
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('creditcardForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
 </form>
-        
+
+<hr />
+
 <form id="freeForm">
   <h5>Personal Addition</h5>
   <div class="grid-x grid-margin-x">
@@ -773,12 +769,13 @@ Everything you type in this form resides exclusively on your computer, and nothi
     </div>
   </div>
 
-          <div class = "hide-for-print large-4 medium-4 columns">
-            <a href="javascript:;" onclick="addInput('freeForm');" class="hide-for-print small radius button">Add More</a>
-				</div> 
-				<input type="button" value="Remove" class = "hide-for-print small radius button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
-        <hr />
+  <div class="grid-x">
+    <div class="cell medium-6 large-6">
+      <a href="javascript:;" onclick="addInput('freeForm');" class="hide-for-print small radius button">Add More</a>
+      <a href="javascript:;" onclick="removeSection(this);" class="hide-for-print small radius button">Remove</a>    </div>
+  </div>
         </form>
+<hr />
 
   <div class="grid-container">
     <div class="grid-x">
@@ -790,10 +787,17 @@ Everything you type in this form resides exclusively on your computer, and nothi
       </div>
     </div>
         
-      <div class="large-4 medium-4 columns">
-        <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print large radius button"">Print To PDF</a><br>
-			</div>
-      <button id="exportButton" class = "hide-for-print large radius button">Export to CSV</button>
+    <div class="grid-x align-center">
+      <div class="cell medium-6 large-6">
+        <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print medium radius button expanded">Print To PDF</a>
+      <button id="exportButton" class = "hide-for-print medium radius button expanded">Export to CSV</button>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="MBS6A6RHAMPBE" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </div>
+    </div>
 
 
 <script>
@@ -823,11 +827,7 @@ Everything you type in this form resides exclusively on your computer, and nothi
   });
 </script>
 
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-  <input type="hidden" name="hosted_button_id" value="MBS6A6RHAMPBE" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-  <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-  </form>
+
 
 </div>
 
