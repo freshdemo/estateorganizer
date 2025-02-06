@@ -8,7 +8,6 @@
     <script src="js/printToPDF.js"></script>
     <script src="js/addInput.js"></script>
     <script src="js/delButtons.js"></script>
-    <!-- <script src="js/vendor/modernizr.js"></script> -->
     <script src="js/js/vendor/jquery.js"></script>
     <script src="js/js/vendor/foundation.min.js"></script>
 
@@ -17,10 +16,17 @@
   <body>
 
     <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell large-12">
+      <div class="grid-x align-middle">
+        <div class="cell auto">
           <h1>Welcome to Estate Organizer</h1>
         </div>
+          <div class="cell shrink">
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="MBS6A6RHAMPBE" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </div>
       </div>
     
  <div class="grid-container">
@@ -788,7 +794,7 @@ Everything you type in this form resides exclusively on your computer, and nothi
     </div>
         
     <div class="grid-x align-center">
-      <div class="cell medium-6 large-6">
+      <div class="cell medium-6 large-6 text-center">
         <a href="javascript:;" onclick="printToPDF();" class = "hide-for-print medium radius button expanded">Print To PDF</a>
       <button id="exportButton" class = "hide-for-print medium radius button expanded">Export to CSV</button>
       <form action="https://www.paypal.com/donate" method="post" target="_top">
@@ -796,6 +802,7 @@ Everything you type in this form resides exclusively on your computer, and nothi
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
         </form>
+        <a href = "./tos.html">Terms of Service</a>
       </div>
     </div>
 
